@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap")
+body {
+  font-family: Poppins, Helvetica;
+}
+
+.unqclrs {
+  background: linear-gradient(45deg, #000046, #0c5a70);
+}
+
+.bg-unqclrs {
+  background: linear-gradient(45deg, #000046, #0c5a70); /* Keep your gradient */
+  height: 100vh; /* Use viewport height units */
+  color: white;
+}
+
+.btn-unqclrs:hover {
+  background: linear-gradient(
+    to right,
+    #1a1a6c,
+    #2e8fb3
+  ); /* Example with different colors */
+}
+
+.btn-unqclrs {
+  background: linear-gradient(120deg, #000046, #0c5a70);
+  border: none; /* Removes default border */
+  color: white; /* Makes text white */
+  cursor: pointer; /* Changes the cursor on hover */
+}
+
+footer {
+  background: linear-gradient(120deg, #000046, #0c5a70);
+  color: white;
+}
+
+#footer-footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#socmed-icon-list :not(:first-child) {
+  margin-left: 10px;
+}
+.footer ul a:hover {
+  color: white;
+}
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+#about h1,
+#vision h1,
+#mission h1 {
+  font-weight: 900;
+  color: #0c5a70;
+  margin-bottom: 0.5em;
+}
+.footer ul a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}

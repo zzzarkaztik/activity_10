@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bootstrap Exercise</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg unqclrs fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">EXERCISE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="hero" class="pt-5">
+      <div
+        class="carousel slide carousel-fade border-0"
+        id="dating-hero"
+        data-bs-ride="carousel"
+        data-bs-interval="8000"
+      >
+        <div class="carousel-indicators">
+          <button
+            data-bs-target="#dating-hero"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button data-bs-target="#dating-hero" data-bs-slide-to="1"></button>
+          <button data-bs-target="#dating-hero" data-bs-slide-to="2"></button>
+          <button data-bs-target="#dating-hero" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner my-0">
+          <div class="carousel-item active">
+            <img
+              src="img/slides/2.jpg"
+              alt="person searching thru dating app"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus, nemo?
+              </p>
+              <a
+                href="#"
+                class="btn btn-unqclrs mb-3"
+                data-bs-toggle="modal"
+                data-bs-target="notReadyModal"
+              >
+                Download the App
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slides/1.jpg"
+              alt="back-to-back couple"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corrupti nemo et optio aperiam, distinctio necessitatibus.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slides/3.jpg"
+              alt="long-distance couple"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Lorem ipsum dolor sit.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                quos laborum harum, distinctio ex officiis recusandae non. Iure,
+                ullam nisi?
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slides/4.jpg"
+              alt="back-hug couple"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Lorem ipsum dolor sit.</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+                harum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#dating-hero"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#dating-hero"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+    <!-- END HERO -->
+
+    <!-- START ABOUT -->
+    <section id="about">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-4 d-none d-lg-block">
+            <img src="img/section-assets/about.png" class="img-fluid" />
+          </div>
+          <div class="col-lg-7 text-end">
+            <h1>ABOUT US</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic
+              odio ad inventore placeat, voluptatem in eligendi nesciunt
+              doloribus mollitia totam quae exercitationem. Iusto temporibus
+              quibusdam maxime sed expedita aut.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repudiandae deleniti explicabo ex repellat, harum saepe rerum
+              molestias odio, est quam, nihil iste soluta ipsum porro
+              exercitationem alias consectetur. Eligendi, amet.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+              adipisci labore non temporibus praesentium rerum. Assumenda vel
+              obcaecati soluta dolore nesciunt, mollitia maiores earum error
+              veritatis iusto nobis quaerat praesentium.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT -->
+    <!-- START MISSION -->
+    <section id="mission">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-7">
+            <h1>MISSION</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Provident in, aliquid maxime sint incidunt eligendi. Inventore
+              doloremque voluptate accusamus suscipit beatae optio repudiandae
+              quis adipisci aliquid voluptatum aspernatur, commodi quam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo
+              molestiae impedit perferendis! Dignissimos aperiam, optio
+              excepturi dolorum ipsa delectus quibusdam ullam amet maxime rerum
+              iure, et dolorem quia corrupti.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              vitae eos tenetur, deleniti adipisci qui sequi a eveniet rem quia
+              temporibus perspiciatis! Reiciendis autem quis exercitationem,
+              ipsum fugit provident eius.
+            </p>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <img src="img/section-assets/mission.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END MISSION -->
+    <!-- START VISION -->
+    <section id="vision">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-4 d-none d-lg-block">
+            <img src="img/section-assets/vision.png" class="img-fluid" />
+          </div>
+          <div class="col-lg-7 text-end">
+            <h1>VISION</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              fugit ea consectetur quam dolores error natus neque provident modi
+              exercitationem! Doloremque tempora, recusandae quibusdam delectus
+              quae sapiente nemo nulla eos.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              necessitatibus ullam, autem optio veniam accusamus eaque eveniet,
+              saepe incidunt nihil amet sunt libero nulla officia voluptate iure
+              id pariatur error?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut
+              cum numquam beatae sequi nisi ut voluptatem maiores explicabo
+              fugiat nemo cumque asperiores, repellat culpa in reiciendis.
+              Voluptatem, magnam doloremque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END VISION -->
+
+    <footer>
+      <div class="container footer pt-4" id="footer-container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <span class="fs-5"><strong>Legal</strong></span>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Terms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Cookie Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Intellectual Property</a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr class="d-block d-sm-none my-3" />
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <span class="fs-5"><strong>Careers</strong></span>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Careers Portal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Tech Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr class="d-block d-md-none my-3" />
+          <div class="col-lg-3 col-md-4 col-sm-6" id="socials">
+            <span class="fs-5"><strong>Social</strong></span>
+            <ul class="list-unstyled d-flex fs-4" id="socmed-icon-list">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/arvsvillalobos"
+                  target="_blank"
+                  ><i class="ri-facebook-box-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/zzzarkaztik" target="_blank"
+                  ><i class="ri-instagram-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/arvsvillalobos"
+                  target="_blank"
+                  ><i class="ri-linkedin-box-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/zzzarkaztik" target="_blank"
+                  ><i class="ri-github-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCMKiL3I0-ga4qgZJaMkCieA"
+                  target="_blank"
+                  ><i class="ri-youtube-fill"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <hr class="d-block d-lg-none my-3" />
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <ul class="text-secondary">
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#mission">Mission</a></li>
+              <li><a href="index.html#vision">Vision</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4" />
+      <div class="container text-center" id="footer-footer">
+        <div class="row">
+          <div>
+            <p>
+              ©2023 ZZZarkaztik Graphics by Arvs Villalobos, All Rights
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
