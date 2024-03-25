@@ -17,12 +17,19 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/login.js"></script>
   </head>
   <body class="unqclrs">
     <div class="container vh-100 text-light d-flex align-items-center">
       <div class="col-md-4 m-auto">
-        <div class="glass p-5 text-center">
-          <h1><i class="ri-bootstrap-fill"></i> EXERCISE</h1>
+        <div class="glass p-5 text-center" id="login-form">
+          <h1><i class="ri-bootstrap-fill"></i> JQUERY</h1>
+          <h1 id="data"></h1>
           <form>
             <div class="form-group my-3">
               <label for="email" class="my-2">Email address:</label>
@@ -40,9 +47,14 @@
                 id="password"
               />
             </div>
-            <a href="admin.html" class="btn btn-primary rounded-pill px-5 mt-3">
+            <button
+              id="loginBtn"
+              type="submit"
+              class="btn btn-primary rounded-pill px-5 mt-3"
+            >
               Login
-            </a>
+            </button>
+            <a href="post.html">Go to post.html</a>
           </form>
         </div>
       </div>

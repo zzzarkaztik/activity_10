@@ -22,10 +22,49 @@ body {
 }
 
 .btn-unqclrs {
-  background: linear-gradient(120deg, #000046, #0c5a70);
+  background: linear-gradient(to right, #000046, #0c5a70);
   border: none; /* Removes default border */
   color: white; /* Makes text white */
   cursor: pointer; /* Changes the cursor on hover */
+}
+
+.btn-cyberpunk:hover {
+  background: linear-gradient(to left, black, yellow);
+  border: 1px solid yellow; /* Removes default border */
+  color: white;
+}
+
+.btn-cyberpunk {
+  border: 1px solid yellow; /* Removes default border */
+  color: black; /* Makes text white */
+  cursor: pointer; /* Changes the cursor on hover */
+  transition: transform 100ms;
+}
+
+.btn-skydrift:hover {
+  background: linear-gradient(to left, #128eed, #ff696c);
+  border: 1px solid #ff696c; /* Removes default border */
+  color: white;
+}
+
+.btn-skydrift {
+  border: 1px solid #ff696c; /* Removes default border */
+  color: #128eed; /* Makes text white */
+  cursor: pointer; /* Changes the cursor on hover */
+  transition: transform 100ms;
+}
+
+.btn-twilightbloom:hover {
+  background: linear-gradient(to left, #1a1a6c, #2e8fb3);
+  border: 1px solid #ff696c; /* Removes default border */
+  color: white;
+}
+
+.btn-twilightbloom {
+  border: 1px solid #1a1a6c; /* Removes default border */
+  color: #2e8fb3; /* Makes text white */
+  cursor: pointer; /* Changes the cursor on hover */
+  transition: transform 100ms;
 }
 
 footer {
@@ -70,4 +109,8 @@ footer {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+}
+
+#login-form {
+  display: none;
 }

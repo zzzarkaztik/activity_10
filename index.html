@@ -22,10 +22,19 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
     <title>Bootstrap Exercise</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg unqclrs fixed-top" data-bs-theme="dark">
+    <nav
+      class="navbar navbar-expand-lg unqclrs theme-elements fixed-top"
+      data-bs-theme="dark"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">EXERCISE</a>
         <button
@@ -88,7 +97,7 @@
               </p>
               <a
                 href="#"
-                class="btn btn-unqclrs mb-3"
+                class="btn btn-unqclrs theme-elements mb-3"
                 data-bs-toggle="modal"
                 data-bs-target="notReadyModal"
               >
@@ -160,6 +169,17 @@
       </div>
     </section>
     <!-- END HERO -->
+
+    <!-- SWATCH CHANGE -->
+    <div class="row m-3">
+      <div class="col-md-3">
+        <div class="color-options">
+          <button class="btn btn-twilightbloom">Twilight Bloom</button>
+          <button class="btn btn-skydrift">Sky Drift</button>
+          <button class="btn btn-cyberpunk">Cyberpunk</button>
+        </div>
+      </div>
+    </div>
 
     <!-- START ABOUT -->
     <section id="about">
@@ -258,7 +278,7 @@
     </section>
     <!-- END VISION -->
 
-    <footer>
+    <footer class="theme-elements">
       <div class="container footer pt-4" id="footer-container">
         <div class="row">
           <div class="col-lg-3 col-md-4 col-sm-6">
